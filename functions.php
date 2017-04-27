@@ -1177,7 +1177,8 @@ function _9iphp_post_thumbnail( $width = 255,$height = 130 ){
     preg_match_all('/<img.*?(?: |\\t|\\r|\\n)?src=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?>/sim', $content, $strResult, PREG_PATTERN_ORDER);
     $n = count($strResult[1]);
     if($n > 0){
-        return '<img class="thumb pull-left hidden-xs" src="'.get_bloginfo('template_directory').'/images/lazy_loading.gif" data-original="'.get_bloginfo("template_url").'/timthumb.php?w='.$width.'&amp;h='.$height.'&amp;src='.$strResult[1][0].'" title="'.get_the_title().'" alt="'.get_the_title().'"/>';
+        //return '<img class="thumb pull-left hidden-xs" src="'.get_bloginfo('template_directory').'/images/lazy_loading.gif" data-original="'.get_bloginfo("template_url").'/timthumb.php?w='.$width.'&amp;h='.$height.'&amp;src='.$strResult[1][0].'" title="'.get_the_title().'" alt="'.get_the_title().'"/>';
+        return '<img class="thumb pull-left" src="'.$strResult[1][0].'?imageView2/1/w/220/h/120" title="'.get_the_title().'" alt="'.get_the_title().'"/>';    //yzl 20170419
     }
 }
 //Gravatar头像替换

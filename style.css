@@ -1111,3 +1111,44 @@ footer#body-footer a:hover {
     box-sizing: border-box;
     top: 0
 }
+
+//yzl 20140419 3d标签云
+#tag_cloud-2 {
+    position:relative;
+    height:340px;
+    margin: 10px auto 0;
+}
+#tag_cloud-2 a {
+    position:absolute;
+    color: #fff;
+    text-align: center;
+    text-overflow: ellipsis;
+    whitewhite-space: nowrap;
+    top:0px;
+    left:0px;
+    padding: 3px 5px;
+    border: none;
+}
+#tag_cloud-2 a:hover {
+    background: #d02f53;
+    display: block;
+}
+#tag_cloud-2 a:nth-child(n) {
+    background: #666;
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 18px;
+    margin: 0 10px 15px 0;
+}
+#tag_cloud-2 a:nth-child(2n) {
+    background: #d1a601;
+}
+#tag_cloud-2 a:nth-child(3n) {
+    background: #286c4a;
+}
+#tag_cloud-2 a:nth-child(5n) {
+    background: #518ab2;
+}
+#tag_cloud-2 a:nth-child(4n) {
+    background: #c91d13;
+}
