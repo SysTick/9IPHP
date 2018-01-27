@@ -15,6 +15,7 @@
         Copyright © 2014 <?php bloginfo('name'); ?> |
         <?php if(get_option('zh_cn_l10n_icp_num')){ echo get_option('zh_cn_l10n_icp_num') . ' | '; } ?>
         <?php $site_analytics = of_get_option('site_analytics', false); if($site_analytics){ echo (strpos($site_analytics, '<script') === false) ? '<script>'.$site_analytics.'</script> | ' : $site_analytics . ' | '; } ?>
+        <a href="http://www.miitbeian.gov.cn" title="备案查询" target="_blank">粤ICP备15038980号</a> |
         Theme By <a href="http://9iphp.com" title="Specs' Bolg" target="_blank">Specs</a>
     </div>
     <ul id="jump" class="visible-lg">
